@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
+@import url('//db.onlinewebfonts.com/c/3d85dc16e94da9358d451666fdbc3398?family=Circular+Medium');
+:root {
+    --primaryFont: 'Circular Medium', sans-serif;
+    --secondaryFont: 'Open Sans', sans-serif;
+    --primary: #ff6a28;
+    --secondary: #222222;
+
+    --textColor1: #777777;
+    --textColor2: #717171;
+    --textColor4: #161408;
+    
+    --red: #ee5252;
+    --grey: #f2f2f2;
+    --white: #fff;
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --box-shadow: 0 2px 4px rgb(0 0 20 / 8%), 0 1px 2px rgb(0 0 20 / 8%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body {
+    font-family: var(--primaryFont);
+    color: var(--secondary);
+}
+a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+/*---------------------
+       NAVMENU
+-----------------------*/
+#navmenu {
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+#navmenu .navmenu-wrapper {
+    width: 75%;
+    --tw-shadow: 0 2.65546px 95px rgba(0,0,0,.1);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+    background-color: #fff;
+    border-radius: 5rem;
+}
+#navmenu .navmenu-wrapper .navmenu-logo {
+    width: 50px;
+}
+#navmenu .navmenu-wrapper .navmenu-logo img {
+    width: 100%;
+}
+#navmenu .navmenu-wrapper .navmenu-menu {
+    flex: 1;
+}
+#navmenu .navmenu-wrapper .navmenu-menu ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: 1rem;
+}
+#navmenu .navmenu-wrapper .navmenu-menu ul li a {
+    margin-left: 1rem;
+    padding: .7rem 1rem;
+    border-radius: 5rem;
+    color: var(--textColor1);
+
+}
+#navmenu .navmenu-wrapper .navmenu-menu ul li a:hover {
+    background-color: var(--grey);
+    transition: .5s;
+    color: var(--secondary);
+}
+#navmenu .navmenu-wrapper .navmenu-account {
+    display: flex;
+    align-items: center;
+}
+#navmenu .navmenu-wrapper .navmenu-account .navmenu-button a {
+    display: flex;
+    padding: .5rem 1rem;
+}
+#navmenu .navmenu-wrapper .navmenu-account  .active {
+    background-color: var(--primary);
+    border-radius: 4rem;
+}
+/*---------------------
+       HEADER
+-----------------------*/
+
+#header {
+    padding: 5rem;
+}
+#header .header-wrapper {
+    text-align: center;
+}
+#header .header-wrapper h1 {
+    font-size: 5rem;
+}
+#header .header-wrapper p {
+    font-size: 1.7rem;
+    font-family: var(--secondaryFont);
+    font-weight: 500;
+    margin: 2rem 0;
+}
+/*---------------------
+       HİZMETLER
+-----------------------*/
+#hizmetler {
+    width: 75%;
+    margin: 0 auto;
+}
+#hizmetler .hizmetler-title {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    border-radius: .3rem;
+    margin: 1rem 0;
+}
+#hizmetler .hizmetler-title p{
+    margin-right: 1rem;
+    padding: .75rem 2rem;
+    border-bottom: 3px solid var(--white);
+    transition: border .5s;
+    cursor: pointer;
+    color: var(--secondary);
+    font-weight: 500;
+}
+#hizmetler .hizmetler-title .active {
+    border-color: var(--primary);
+    color: var(--secondary);
+}
+#hizmetler .hizmetler-wrapper {
+    display: flex;
+    padding: 1rem 0;
+    position: relative;
+}
+#hizmetler .hizmetler-wrapper .hizmet {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 1rem;
+    background-color: var(--white);
+    border-radius: .3rem;
+    --tw-shadow: 0 2.65546px 95px rgba(0,0,0,.1);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+#hizmetler .hizmetler-wrapper .hizmet .hizmet-img {
+    width: 250px;
+    overflow: hidden;
+}
+#hizmetler .hizmetler-wrapper .hizmet .hizmet-img img {
+    width: 100%;
+    border-radius: .3rem .3rem 0 0;
+    transition: transform .5s ease;
+}
+#hizmetler .hizmetler-wrapper .hizmet .hizmet-img img:hover {
+    transform: scale(1.2);
+}
+#hizmetler .hizmetler-wrapper .hizmet .hizmet-title h3 {
+    color: var(--secondary);
+}
+#hizmetler .hizmetler-wrapper .hizmet .hizmet-info {
+    padding: 1rem;
+}
+#hizmetler .hizmetler-wrapper .hizmet .hizmet-info .hizmet-isletme a{
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 1rem;
+}
+#hizmetler .hizmetler-wrapper .hizmet .hizmet-info .hizmet-description {
+    font-size: .9rem;
+    color: var(--secondary);
+    font-family: var(--secondaryFont);
+}
+#hizmetler .hizmetler-wrapper .hizmet .hizmet-info .hizmet-pricing {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-family: var(--secondaryFont);
+}
+#hizmetler .hizmetler-wrapper .hizmet .hizmet-info #hizmet-randevu-al {
+    background-color: var(--primary);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    padding: .375rem 0;
+    border-radius: .3rem;
+    margin-top: 1rem;
+}
+.splide__pagination {
+    position: absolute;
+    bottom: -.8rem!important;
+}
+.splide__pagination__page {
+    padding: .5rem!important;
+    background-color: var(--secondary)!important;
+}
+.splide__pagination .is-active {
+    background-color: var(--primary)!important;
+}
+.splide__arrow {
+    /* display: none!important; */
+    background-color: var(--primary)!important;
+    width: 2.5rem!important;
+    height: 2.5rem!important;
+}
+.splide__arrow--prev {
+    left: -2rem!important;
+}
+.splide__arrow--next {
+    right: -2rem!important;
+}
+.splide__arrow svg {
+    fill: var(--white)!important;
+}
+/*---------------------
+       AccountMenu
+-----------------------*/
+#account-menu {
+    width: 100%;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #f3f3f3;
+}
+#account-menu .account-menu-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#account-menu .account-menu-logo {
+    width: 50px;
+}
+#account-menu .account-menu-logo a {
+    display: flex;
+    align-items: center;
+}
+#account-menu .account-menu-logo a h1 {
+    font-weight: 500;
+    padding-left: .5rem;
+}
+#account-menu .account-menu-logo img{
+    width: 100%;
+}
+.account-right {
+    display: flex;
+}
+.account-right a {
+    font-weight: bold;
+}
+/*---------------------
+       SIGNUP
+-----------------------*/
+#signup {
+    text-align: center;
+    margin: 1rem;
+    width: 400px;
+    margin: 0 auto;
+}
+#signup .signup-title h3 {
+    font-size: 2rem;
+    padding: 1rem;
+}
+#signup form {
+    display: flex;
+    flex-direction: column;
+}
+#signup form .form-input {
+    padding: .7rem .5rem;
+    margin: .7rem 0;
+    background: rgba(34,34,34,.05);;
+    border: 1px solid rgba(34,34,34,.05);
+    border-radius: .3rem;
+    font-family: var(--secondaryFont);
+}
+#signup form .validate {
+    color: var(--red);
+    text-align: left;
+    font-family: var(--secondaryFont);
+    font-size: .9rem;
+}
+#signup form .error {
+    border-color: var(--red);
+}
+#signup form .submit {
+    padding: .8rem;
+    background-color: var(--primary);
+    border: none;
+    font-size: 1rem;
+    border-radius: 4rem;
+    margin: 1rem 0;
+}
+#signup form p {
+    color: var(--textColor1);
+}
+/*---------------------
+       MEDİA QUERY
+-----------------------*/
+
+@media (max-width: 1200px) {
+    #navmenu .navmenu-wrapper {
+        width: 90%;
+    }
+}
+@media (max-width: 700px) {
+    #navmenu .navmenu-wrapper {
+        --tw-shadow: 0 0 #0000;
+        width: 100%;
+    }
+    #header {
+        padding: 0 1rem;
+    }
+    #signup {
+        width: 70%;
+    }
+}
+@media (max-width: 480px) {
+    #header {
+        padding: 1rem;
+    }
+    #header .header-wrapper h1 {
+        font-size: 2rem;
+    }
+    #header .header-wrapper p {
+        font-size: 1rem;
+    }
+    #navmenu {
+        font-size: .8rem;
+    }
+    #navmenu .navmenu-wrapper .navmenu-menu ul {
+        margin-left: 0;
+    }
+    #navmenu .navmenu-wrapper .navmenu-menu ul li a {
+        margin-left: 0;
+        padding: .5rem;
+    }
+    #account-menu {
+        padding: 1rem .5rem;
+    }
+    #account-menu .account-right p span {
+        display: none;
+    }
+}
